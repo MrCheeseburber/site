@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <link href="../styles.css" rel="stylesheet">
+        <title>The Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Neat Little Form</h1>
+        <h3>Here's a form I made you can fill out if you want</h3>
+        <div>This is just a little form that I made because I might like to know some basic information about you. If you don't want to answer any of the questions, you don't have to; it's totally fine to leave anything blank. I'll have my answers to all of these in a separate page linked at the end of this form.</div>
+        <form action="https://script.google.com/macros/s/AKfycbzfLOnk3s60L4VfSbZYx5nANrvi7HSYMmInDHm2kdwg2IlrgKxmw7XT4SoTJblZgzQM/exec" method="POST">
+            
+            <!-- This is the beginning, mostly pretty serious questions -->
+            
+            <label for="name">How would you like me to refer to you?</label> </br>
+                <input type="text" id="name" name="name" > </br></br>
+            <label for="activities">What sort of stuff do you enjoy doing?</label> </br>
+                <textarea name="activities" id='activities'></textarea></br></br>
+            <label for="musicListening">What types of music do you usually enjoy listening to? Are there any specific people/groups?</label> </br>
+                <textarea name="musicListening" id='musicListening'></textarea></br></br>
+            <label for="colour">What colours do you like? Do you have a particular favourite?</label> </br>
+                <textarea name="colour" id='colour'></textarea></br></br>
+            <label for="proudThing">What is something you are proud of?</label> </br>
+                <textarea name="proudThing" id='proudThing'></textarea></br></br>
+            <label for="goodFood">What types of foods do you like?</label> </br>
+                <textarea name="goodFood" id='goodFood'></textarea></br></br>
+            <label for="badFood">What types of foods do you <b>not</b> like?</label> </br>
+                <textarea name="badFood" id='badFood'></textarea></br></br>
+            
+            <!-- This is the end of the kind of serious questions. After this, some more silliness is okay -->
+            
+            <p>What is your favourite aspect ratio (such as in computer monitors and TVs)?</p>
+            
+                <input class="bubble" type='radio' id='noAnswer' name='aspectRatio' value='none'> 
+                <label class="radios" for='noAnswer'>No Answer</label> </br>
+                
+                <input class="bubble" type='radio' id='16.9' name='aspectRatio' value='16:9'> 
+                <label class="radios" for='16.9'>16:9 (generally standard for HD displays; 1920x1080 resolution)</label> </br>
+                
+                <input class="bubble" type='radio' id='4.3' name='aspectRatio' value='4:3'> 
+                <label class="radios" for='4.3'>4:3 (common in older displays, especially CRT TVs; 320x240 resolution)</label> </br>
+                
+                <input class="bubble" type='radio' id='16.10' name='aspectRatio' value='16:10'> 
+                <label class="radios" for='16.10'>16:10 (uncommon nowadays, used to be used for computers; 1920x1200 resolution)</label> </br>
+                
+                <input class="bubble" type='radio' id='190.1' name='aspectRatio' value='1.90:1'> 
+                <label class="radios" for='190.1'>1.90:1 (widescreen, like in a movie theatre; 4096x2160 resolution)</label> </br>
+                
+                <input class="bubble" type='radio' id='otherRadio' name='aspectRatio' value='Other'>
+                <label class="radios" for='otherRadio'>Other:</label>
+                <input type="text" id="otherText" name="aspectRatioOther" > </br>
+            
+            <label for="aspectRatioWhy">Why is that?</label> </br>
+                <textarea name="aspectRatioWhy" id='aspectRatioWhy'></textarea></br></br>
+                
+            <p> Now for the question that has plagued humanity for generations: Cats or dogs? </p>
+                <input class="bubble" type='radio' id='noPreference' name='Catdog' value='NoPreference'> 
+                    <label class="radios" for='noPreference'>No Preference</label> </br>
+                
+                <input class="bubble" type='radio' id='cats' name='Catdog' value='cat'> 
+                    <label class="radios" for='cats'>Cats</label> </br>
+
+                <input class="bubble" type='radio' id='dogs' name='Catdog' value='dogs'> 
+                    <label class="radios" for='dogs'>Dogs</label> </br>
+
+                <input class="bubble" type='radio' id='infrastructure' name='Catdog' value='infrastructure'> 
+                    <label class="radios" for='infrastructure'>Infrastructure</label> </br>
+                
+                <label for="CatdogWhy">Why is that?</label> </br>
+                <textarea name="CatdogWhy" id='CatdogWhy'></textarea></br></br>
+                
+            <label for="owlName">What would you name this owl? </br> <img src="../Images/owlToBeNamed.jpg" alt="An owl image ripped from the Wikipedia page for Owl"></label> </br>
+                <textarea name="owlName" id='owlName'></textarea></br></br>
+                
+                
+                </br></br>
+            
+            <!-- This is the stuff that goes at the end -->
+            
+            <input type="submit" value="Submit">
+            
+        </form>
+    </body>
+</html>
