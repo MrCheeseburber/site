@@ -1,0 +1,131 @@
+
+/*Font Import*/
+@font-face {
+    font-family: 'hyliaSerif';
+    src: url('Fonts/HyliaSerif/hyliaserifbeta-regular.woff2') format('woff2'), url('Fonts/HyliaSerif/hyliaserifbeta-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'calamitySans';
+    src: url('Fonts/CalamitySans/calamity-regular-webfont.woff2') format('woff2'), url('Fonts/CalamitySans/calamity-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+}
+@font-face {
+    font-family: 'victor_monoregular';
+    src: url('victormono-regular-webfont.woff2') format('woff2'),
+         url('victormono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*This is formatting the index page and probably universal things too*/
+html{
+    background-image: url('Images/ObjectMapBackground.png');
+}
+
+body {
+    background-image: url('Images/ObjectMapBackground.png');
+    font-family: victor_monoregular;
+    letter-spacing: 0.8%;
+    color: yellow;
+    margin-bottom: 0.3%;
+    margin-top: 0.3%;
+    margin-left: 1%;
+    font-size: 130%;
+}
+
+h1 {
+    font-family: 'hyliaSerif';
+    color: yellow;
+    text-align: center;
+    margin-bottom: 0.7%;
+    margin-top: 1%;
+    display: block;
+    font-size: 250%;
+}
+
+h2 {
+    font-family: 'calamitySans';
+    margin-bottom: 1%;
+    margin-top: 0.4%;
+    display: block;
+    text-align:center;
+}
+
+h3 {
+    font-size: 130%;
+}
+
+.Introduction {
+    background-color: rgb(50,50,50);
+    display:flow;
+    padding:2%;
+    margin-right: 45%;
+    margin-left:10%
+}
+
+button {
+    display: block;
+    font-family: victor_monoregular;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: rgb(100,0,0);
+    color: rgb(0,200,255);
+    font-size:120%;
+    text-align: center;
+}
+
+.List {
+    display: list-item;
+    margin-left: 5%;
+    margin-top: 0.5%;
+    font-size: 105%;
+}
+
+.subList {
+    display: list-item;
+    margin: 0.1%;
+    margin-left:7.5%;
+    font-size: 95%;
+}
+
+.inlineButton {
+    display: inline;
+    padding: 0%;
+    font-size: 100%;
+    margin: 0%;
+}
+
+form {
+    margin: 4%;
+    padding: 1%;
+    background-color: rgb(20,25,25);
+    font-size: 110%;
+    color: rgb(255,245,245);
+}
+
+textarea {
+    width: 99%;
+    height: 100px;
+    background-color: rgb(12,15,15);
+    color:rgb(245,235,235);
+    font-size: 110%;
+}
+
+input {
+    background-color: rgb(12,15,15);
+    color:rgb(245,235,235);
+    padding: 0.5%;
+    font-size: 120%;
+}
+
+.radios {
+    font-size: 80%;
+}
+
+.bubble {
+    margin-left: 2.5%;
+}
